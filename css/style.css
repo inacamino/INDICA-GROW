@@ -422,7 +422,6 @@ footer {
   }
 
   .principal__informativ {
-    margin: 150px 0px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -430,10 +429,8 @@ footer {
 
   .principal__informativ-container {
     display: flex;
-    height: 100vh;
     align-items: center;
     width: 100%;
-    margin-top: -300px;
   }
 
   .principal__informativ-title_paragraph {
@@ -455,7 +452,6 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin-top: -200px;
     margin-bottom: 100px;
     margin-right: 100px;
   }
@@ -554,7 +550,7 @@ footer {
   .section__marcas-img {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     padding: 10px 0 50px;
   }
