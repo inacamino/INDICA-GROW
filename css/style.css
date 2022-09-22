@@ -550,11 +550,9 @@ footer {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    padding: 10px 0 50px;
   }
 
   .section__marcas-img img {
-    padding: 20px;
     border: 10px ridge rgb(0, 87, 0);
     margin: 30px;
   }
@@ -572,8 +570,7 @@ footer {
   }
 
   .section__marcas-links a {
-    margin-left: 270px;
-    padding: 10px;
+    padding: 50px 50px;
   }
   .section__marcas-links {
     animation-name: links;
@@ -582,6 +579,7 @@ footer {
     animation-timing-function: ease-in-out;
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
 
   .section__marcas-links a:hover {
