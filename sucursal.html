@@ -15,6 +15,8 @@
     <meta name="robots" content="index" />
     <meta name="author" content="Iñaki Joaquin Camino" />
     <link rel="shortcut icon" href="./img/Logoicon.jpg" type="image/x-icon" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,46 +26,57 @@
     />
     <title>Indica / Growshop</title>
   </head>
-  <body>
-    <header class="main__header">
-      <a href="index.html"
-        ><img src="./img/Logoicon.jpg" alt="logo" width="50px" height="50px"
-      /></a>
-      <!-- inicio barra de navegacion -->
-      <nav>
-        <ul class="main__header_nav">
-          <li><a href="index.html">Inicio</a></li>
-          <li>
-            <a href="smokeproducts.html">Smoke Products</a>
-            <ul>
-              <li>
-                <a href="bandejasypicadores.html">Bandejas/Picadores</a>
-              </li>
-              <li>
-                <a href="pipasysauver.html">Pipas/Sauvers</a>
-              </li>
-              <li>
-                <a href="sedasyencendedores.html">Sedas/Encendedeores</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="growproducts.html">Grow Products</a>
-            <ul>
-              <li>
-                <a href="fertilizantesysustratos.html"
-                  >Fertilizantes/Sustratos</a
-                >
-              </li>
-              <li><a href="autocultivo.html">Autocultivo</a></li>
-            </ul>
-          </li>
-          <li><a href="sucursal.html">Sucursal</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-        </ul>
-      </nav>
-      <!-- fin de la barra de navegacion -->
-    </header>
+    <body>
+      <header class="main__header">
+        <!-- Navegador con Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="./img/Logoicon.jpg" alt="logo" width="50px"
+                height="50px" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto ms-md-auto ms-lg-auto mb-2 mb-lg-0">
+                <li class="nav-item pe-3">
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown pe-3">
+                  <a class="nav-link dropdown-toggle" href="smokeproducts.html" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Smoke Products
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="smokeproducts.html">Smoke Products</a></li>
+                    <li><a class="dropdown-item" href="#">Sedas y Encendedores</a></li>
+                    <li><a class="dropdown-item" href="#">Pipas y Sauvers</a></li>
+                    <li><a class="dropdown-item" href="#">Bandejas y Picadores</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown pe-3">
+                  <a class="nav-link dropdown-toggle" href="growproducts.html" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Grow Products
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="growproducts.html">Grow Products</a></li>
+                    <li><a class="dropdown-item" href="#">Fertilizantes y Sustratos</a></li>
+                    <li><a class="dropdown-item" href="#">Autocultivo</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item pe-3">
+                  <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item pe-3">
+                  <a class="nav-link" href="sucursal.html">Sucursal</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!--  fin de Navegador con Bootstrap -->
+      </header>
     <div class="fixed_wpp">
       <a target="_blank" href="https://api.whatsapp.com/send?phone=+5491122900325&text=Quiero%20mas%20informacion"><img src="./img/whatssapp.png" alt="whatssapp" height="50" width="50" />
     </div></a> 
@@ -186,5 +199,7 @@
       </div>
     </footer>
     <!-- fin del footer -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
 </html>
