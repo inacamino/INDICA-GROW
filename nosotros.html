@@ -32,7 +32,7 @@
   <body>
     <header class="main__header">
       <!-- Navegador con Bootstrap -->
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
           <a class="navbar-brand" href="index.html"><img src="./img/Logoicon.jpg" alt="logo" width="50px"
               height="50px" /></a>
@@ -95,16 +95,16 @@
         </h2>
       </div>
       <div>
-        <p class="principal__informativ-title">
-          Quienes somos?<br />Somos <b>Indica Growshop</b>, un grupo de amigos
+        <p class="principal__informativ_nosotros-title">Quienes somos?</p>  
+          <p class="principal__informativ_nosotros-subtitle">Somos <b>Indica Growshop</b>, un grupo de amigos
           del barrio de Beccar, Zona norte, que un dia decidio crear un
           emprendimiento con el objetivo de satisfacer las necesidades de los
           cultivadores de todo el mundo, mediante conocimientos y experiencias
-          adquiridas durante largos años en el ambito de cultivadores.
+          adquiridas durante largos años en el ambito de cultivadores.</p> 
         </p>
       </div>
       <div>
-        <h3 class="principal__informativ-title_paragraph">
+        <h3 class="principal__informativ_nosotros-title">
           Nuestros valores como la honestidad, confianza, respeto, esfuerzo,
           amistad, paz, libertad, lealtad, compromismo y amor, son las claves
           para lograr satisfaccion en nuestros clientes y sobre todo para que lo
@@ -112,6 +112,33 @@
           dia llevar a cabo todo lo que nos proponemos
         </h3>
       </div>
+      <section class="carousel_section">
+        <div id="slider-meme" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/memes/memeuno.jpeg" class="d-block w-100" alt="memeuno">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/memes/memedos.jpeg" class="d-block w-100" alt="memedos">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/memes/memetres.jpeg" class="d-block w-100" alt="memetres">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/memes/memecuatro.jpeg" class="d-block w-100" alt="memecuatro">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="slider-meme" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="slider-meme" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Proximo</span>
+        </button>
+      </div>
+      </section>
+      
     </main>
   <!-- fin del contenido principal -->
   <!-- inicio del footer -->

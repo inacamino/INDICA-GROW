@@ -1,0 +1,17 @@
+// Include any default variable overrides here (though functions won't be available)
+
+$dark: #08090b;
+$font-family-sans-serif: "Alegreya", serif;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+@import "./pages/index";
+@import "./pages/smokeproducts";
+@import "./pages/growproducts";
+@import "./pages/nosotros";
+@import "./pages/sucursal";
+@import "./components/generales";
+@import "./components/navbar";
+@import "./components/footer";

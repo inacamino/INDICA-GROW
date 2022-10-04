@@ -1,0 +1,200 @@
+/* pagina GROW PRODUCTS */
+.main__principal_grow_wrapper-title {
+  font-style: normal;
+  font-size: 4rem;
+  font-family: "Alegreya", serif;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.6;
+  color: rgb(0, 87, 0);
+  padding: 15px;
+  margin-top: 70px;
+  &_subtitle {
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-family: "Alegreya", serif;
+    color: rgb(0, 87, 0);
+    padding: 15px;
+  }
+  &-informativ {
+    color: rgb(0, 87, 0);
+    font-size: 1.5rem;
+    font-family: "Alegreya", serif;
+    font-weight: 700;
+    text-align: left;
+    padding: 15px;
+  }
+}
+
+.section__principal_grow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  &_wrapper-informativ {
+    font-size: 2rem;
+    font-family: "Alegreya", serif;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(0, 87, 0);
+    padding: 15px;
+    &-paragraph {
+      text-align: justify;
+      font-size: 1.2rem;
+      font-family: "Alegreya", serif;
+      font-style: normal;
+      color: rgb(0, 87, 0);
+      font-weight: 700;
+      padding: 15px;
+    }
+  }
+}
+
+.section__grow-links_img a {
+  color: rgb(0, 87, 0);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: "Alegreya", serif;
+  font-style: normal;
+  text-align: center;
+  line-height: 1.6;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+.card01 {
+  padding: 15px;
+  border: 10px ridge rgb(0, 87, 0);
+  margin: 20px;
+}
+
+.card02 {
+  padding: 15px;
+  border: 10px ridge rgb(0, 87, 0);
+  margin: 20px;
+}
+
+.card03 {
+  padding: 15px;
+  border: 10px ridge rgb(0, 87, 0);
+  margin: 20px;
+}
+
+.section__grow-links_title {
+  font-size: 2rem;
+  font-family: "Alegreya", serif;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(0, 87, 0);
+  margin-top: 50px;
+}
+
+@media (min-width: 992px) {
+  .main__principal_wrapper-title_subtitle {
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-family: "Alegreya", serif;
+    color: rgb(0, 87, 0);
+    margin-top: 105px;
+    padding-bottom: 10px;
+  }
+  .section__principal_grow {
+    display: grid;
+    grid-template-areas:
+      "title title title"
+      "card-01 card-02 card-03";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px 100px;
+    justify-items: center;
+    &_wrapper {
+      grid-area: title;
+      margin: 10px;
+    }
+    &-informativ {
+      color: rgb(0, 87, 0);
+      font-size: 1.9rem;
+      font-family: "Alegreya", serif;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 65px;
+    }
+    &-paragraph {
+      text-align: center;
+      font-size: 1.2rem;
+      font-family: "Alegreya", serif;
+      font-style: normal;
+      color: rgb(0, 87, 0);
+      font-weight: 700;
+      padding: 15px;
+    }
+  }
+  .section__grow-links_title {
+    font-size: 2rem;
+    font-family: "Alegreya", serif;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(0, 87, 0);
+    margin-top: 50px;
+  }
+
+  .card01 {
+    grid-area: card-01;
+    margin: -30px;
+    border: 10px ridge rgb(0, 87, 0);
+    &:hover {
+      transform: scale(1.3) translate(-80px, -50px);
+      transition: all 2s;
+    }
+  }
+  .card02 {
+    grid-area: card-02;
+    margin: -30px;
+    border: 10px ridge rgb(0, 87, 0);
+    &:hover {
+      transform: scale(1.3);
+      transition: all 2s;
+    }
+  }
+  .card03 {
+    grid-area: card-03;
+    margin: -30px;
+    border: 10px ridge rgb(0, 87, 0);
+    &:hover {
+      transform: scale(1.3) translate(100px, -50px);
+      transition: all 2s;
+    }
+  }
+
+  .section__grow-links_img {
+    animation-name: link-grow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    a {
+      margin-top: 40px;
+      &:hover {
+        color: #864800;
+      }
+    }
+  }
+}
+@keyframes link-grow {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, -35px);
+  }
+
+  100% {
+    transform: translate(0, -0px);
+  }
+}

@@ -1,0 +1,36 @@
+.main__principal_wrapper-title {
+  font-style: normal;
+  font-size: 4rem;
+  font-family: "Alegreya", serif;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.6;
+  color: rgb(0, 87, 0);
+  padding: 15px;
+}
+.principal__informativ_nosotros-title {
+  font-size: 2rem;
+  font-family: "Alegreya", serif;
+  text-align: center;
+  color: rgb(0, 87, 0);
+  font-weight: 400;
+  padding: 15px;
+}
+.principal__informativ_nosotros-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Alegreya", serif;
+  font-style: normal;
+  color: rgb(0, 87, 0);
+  font-weight: 700;
+  padding: 15px;
+}
+
+@media (min-width: 992px) {
+  .slide {
+    margin-top: 10px;
+  }
+  .slide img {
+    height: 65%;
+  }
+}

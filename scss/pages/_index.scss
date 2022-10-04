@@ -1,0 +1,252 @@
+.wrapper__img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 120px;
+  padding: 4px 0;
+  margin: 72px 0;
+  img {
+    box-shadow: #864800 1px 1px 50px 0;
+  }
+}
+
+.main__principal {
+  background-color: #08090b;
+  &_wrapper {
+    &-title {
+      font-style: normal;
+      font-size: 4rem;
+      font-family: "Alegreya", serif;
+      text-align: center;
+      font-weight: 700;
+      line-height: 1.6;
+      color: rgb(0, 87, 0);
+      padding: 15px;
+    }
+    &-subtitle {
+      font-size: 3rem;
+      font-family: "Alegreya", serif;
+      text-align: center;
+      color: rgb(0, 87, 0);
+      font-weight: 700;
+      padding: 15px;
+    }
+  }
+}
+
+/* SECTION 1 */
+.principal__informativ {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px 15px;
+  &-title {
+    text-align: left;
+    font-size: 2rem;
+    font-style: normal;
+    font-family: "Alegreya", serif;
+    color: rgb(0, 87, 0);
+    margin-top: 105px;
+    padding-bottom: 10px;
+    &_paragraph {
+      text-align: justify;
+      font-size: 1.2rem;
+      font-family: "Alegreya", serif;
+      font-style: normal;
+      color: rgb(0, 87, 0);
+      font-weight: 700;
+      padding: 15px;
+    }
+  }
+}
+.principal__informativ-img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: #864800 1px 1px 10px 0;
+}
+/* SECTION 1 */
+
+/* SECTION 2 */
+.section__principal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 15px;
+}
+
+.section__img-one img {
+  border: 10px ridge rgb(0, 87, 0);
+}
+
+.section__img-one_two img {
+  border: 10px groove rgb(0, 87, 0);
+}
+
+.img__link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: "Alegreya", serif;
+  font-style: normal;
+  text-align: center;
+  line-height: 1.6;
+  padding: 10px;
+  font-weight: 700;
+  a {
+    color: rgb(0, 87, 0);
+  }
+}
+/* SECTION 2 */
+
+/* INICIO TABLET */
+@media (min-width: 768px) {
+  .wrapper__img {
+    height: 250px;
+    padding: 50px 0;
+    margin: 70px 0;
+  }
+  .section__principal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  .img__link {
+    text-decoration: none;
+    font-size: 13px;
+    font-family: "Alegreya", serif;
+    font-style: normal;
+    text-align: center;
+    line-height: 1.6;
+    padding: 15px;
+    font-weight: 700;
+  }
+
+  .principal_footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+  }
+}
+
+/* INICIO DESKTOP */
+@media (min-width: 992px) {
+  /* inicio main principal */
+
+  .main__principal {
+    background-color: #08090b;
+    padding: 100px 80px 50px;
+  }
+
+  .wrapper__img {
+    height: 100%;
+    animation-name: float;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    img {
+      box-shadow: #864800 1px 1px 50px 0;
+    }
+  }
+
+  .principal__informativ {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    &-container {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+    &-title_paragraph {
+      width: 50%;
+    }
+    &-img {
+      width: 35%;
+      margin-left: 80px;
+      transform: translate(100px, -50px);
+      animation-name: cultivo;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-duration: 10s;
+    }
+  }
+
+  .section__principal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+  }
+
+  .section__img-one img {
+    padding: 20px;
+    margin: 5px 20px 5px 290px;
+    border: 10px ridge rgb(0, 87, 0);
+    &:hover {
+      transition: all 2s;
+    }
+  }
+
+  .section__principal img:hover {
+    transform: scale(1.3);
+  }
+
+  .section__img-one_two img {
+    padding: 20px;
+    margin: 5px 20px 5px 250px;
+    border: 10px groove rgb(0, 87, 0);
+    &:hover {
+      transition: all 2s;
+    }
+  }
+
+  .img__link {
+    margin-left: 15px;
+    margin-top: 300px;
+    font-size: 1.2rem;
+  }
+
+  .img__link a:hover {
+    color: #864800;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, -35px);
+  }
+
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+@keyframes cultivo {
+  0%,
+  100% {
+    transform: translate(-70px, -50px);
+  }
+
+  25% {
+    transform: translate(100px, -50px);
+  }
+
+  50% {
+    transform: translate(100px, 50px);
+  }
+
+  75% {
+    transform: translate(-70px, 50px);
+  }
+}
