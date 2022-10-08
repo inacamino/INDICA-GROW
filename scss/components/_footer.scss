@@ -1,7 +1,7 @@
 /* FOOOTER */
 footer {
   width: 100%;
-  background-color: rgb(0, 87, 0);
+  background-color: #3bb231;
   font-family: "Alegreya", serif;
 }
 
@@ -14,9 +14,9 @@ footer {
 
 .box__footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
   padding: 20px;
 }
 
@@ -33,7 +33,7 @@ footer {
   font-family: "Alegreya", serif;
   font-weight: 500;
   color: #000000;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .box__footer h4 {
@@ -41,12 +41,12 @@ footer {
   font-family: "Alegreya", serif;
   font-weight: 700;
   padding: 10px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .box__footer a {
   margin-top: 10px;
-  color: #0f0f0f;
+  color: #000000;
   font-family: "Alegreya", serif;
   font-weight: 700;
   padding: 10px;
@@ -62,8 +62,7 @@ footer {
   .principal_footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 100px;
+    justify-content: space-between;
     margin-bottom: 30px;
   }
 
@@ -72,14 +71,12 @@ footer {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: center;
   }
 
   .box__footer h4 {
     color: #000000;
     font-family: "Alegreya", serif;
     font-weight: 700;
-    text-shadow: 0 3px 3px #08090b;
     padding-top: 20px;
     font-size: 1.2rem;
   }
@@ -88,8 +85,7 @@ footer {
 @media (min-width: 992px) {
   footer {
     width: 100%;
-    padding: 50px 0;
-    background-color: rgb(0, 87, 0);
+    background-color: #3bb231;
   }
 
   .principal_footer {
@@ -98,7 +94,7 @@ footer {
     justify-content: space-between;
     max-width: 1200px;
     margin: auto;
-    margin-left: 50px;
+    margin-left: 130px;
     height: 500px;
   }
 
@@ -113,7 +109,7 @@ footer {
     width: 120px;
     border: solid 3px #08090b;
     border-radius: 10px;
-    box-shadow: #000000 10px 10px 10px 0;
+    @include box_shadow(1);
   }
 
   .box__footer .text__logo {
@@ -125,13 +121,12 @@ footer {
     color: #000000;
     font-family: "Alegreya", serif;
     font-weight: 700;
-    text-shadow: 0 3px 3px #08090b;
     font-size: 1.2rem;
   }
 
   .box__footer a {
     margin-top: 10px;
-    color: #0f0f0f;
+    color: #000000;
     font-family: "Alegreya", serif;
     font-weight: 700;
   }

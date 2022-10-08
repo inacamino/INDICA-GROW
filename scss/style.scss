@@ -1,12 +1,11 @@
-// Include any default variable overrides here (though functions won't be available)
+@import "./complements/variables";
 
-$dark: #08090b;
-$font-family-sans-serif: "Alegreya", serif;
+// Include any default variable overrides here (though functions won't be available)
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
-
+@import "./complements/mixins";
 @import "./pages/index";
 @import "./pages/smokeproducts";
 @import "./pages/growproducts";
@@ -15,3 +14,4 @@ $font-family-sans-serif: "Alegreya", serif;
 @import "./components/generales";
 @import "./components/navbar";
 @import "./components/footer";
+@import "./complements/bucles";

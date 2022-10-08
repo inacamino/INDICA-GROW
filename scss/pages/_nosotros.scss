@@ -8,29 +8,55 @@
   color: rgb(0, 87, 0);
   padding: 15px;
 }
-.principal__informativ_nosotros-title {
-  font-size: 2rem;
-  font-family: "Alegreya", serif;
-  text-align: center;
-  color: rgb(0, 87, 0);
-  font-weight: 400;
-  padding: 15px;
+
+.principal__informativ_nosotros {
+  &-title {
+    font-size: 2.5rem;
+    font-family: "Alegreya", serif;
+    text-align: center;
+    color: rgb(0, 87, 0);
+    font-weight: 400;
+    padding: 15px;
+  }
+  &-subtitle {
+    font-size: 2rem;
+    font-family: "Alegreya", serif;
+    text-align: center;
+    color: rgb(0, 87, 0);
+    font-weight: 400;
+    padding: 15px;
+  }
+  &-subsubtitle {
+    font-size: 1.5rem;
+    font-family: "Alegreya", serif;
+    text-align: center;
+    color: rgb(0, 87, 0);
+    font-weight: 400;
+    padding: 15px;
+  }
 }
-.principal__informativ_nosotros-subtitle {
-  text-align: center;
-  font-size: 1.2rem;
-  font-family: "Alegreya", serif;
-  font-style: normal;
-  color: rgb(0, 87, 0);
-  font-weight: 700;
-  padding: 15px;
+.slide {
+  margin-top: 10px;
+  img {
+    height: 40vh;
+    margin: 55px;
+  }
+}
+.carousel-item img {
+  border-radius: 2rem;
+  box-shadow: #864800 1px 1px 15px 0;
 }
 
 @media (min-width: 992px) {
   .slide {
     margin-top: 10px;
+    img {
+      height: 40vh;
+      margin: 55px;
+    }
   }
-  .slide img {
-    height: 65%;
+  .carousel-item img {
+    border-radius: 2rem;
+    box-shadow: #864800 1px 1px 15px 0;
   }
 }
