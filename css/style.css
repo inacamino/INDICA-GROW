@@ -8782,12 +8782,12 @@ textarea.form-control-lg {
   padding: 15px;
   margin-top: 70px; }
   .main__principal_grow_wrapper-title_subtitle {
-    text-align: center;
+    text-align: justify;
     font-size: 2rem;
     font-style: normal;
     font-family: "Alegreya", serif;
     color: #3bb231;
-    padding: 15px; }
+    padding: 30px; }
 
 .section__principal_grow {
   display: flex;
@@ -9044,7 +9044,7 @@ textarea.form-control-lg {
 .principal__informativ_nosotros-subtitle {
   font-size: 2rem;
   font-family: "Alegreya", serif;
-  text-align: center;
+  text-align: justify;
   color: #3bb231;
   font-weight: 400;
   padding: 15px; }
@@ -9052,7 +9052,7 @@ textarea.form-control-lg {
 .principal__informativ_nosotros-subsubtitle {
   font-size: 1.5rem;
   font-family: "Alegreya", serif;
-  text-align: center;
+  text-align: justify;
   color: #3bb231;
   font-weight: 400;
   padding: 15px; }
