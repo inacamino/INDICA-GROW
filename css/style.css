@@ -9080,7 +9080,11 @@ textarea.form-control-lg {
     border-radius: 2rem;
     box-shadow: #864800 1px 1px 15px 0;
     width: 25%;
-    height: 25%; } }
+    height: 25%; }
+  .carousel-control-next {
+    right: 310px; }
+  .carousel-control-prev {
+    left: 310px; } }
 
 .main__principal-sucursal_wrapper-title {
   font-style: normal;
