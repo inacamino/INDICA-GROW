@@ -36,20 +36,24 @@ footer {
   font-size: 18px;
 }
 
-.box__footer h4 {
-  color: #000000;
-  font-family: "Alegreya", serif;
-  font-weight: 700;
-  padding: 10px;
-  font-size: 1.3rem;
+.box__footer {
+  h4 {
+    color: #000000;
+    font-family: "Alegreya", serif;
+    font-weight: 700;
+    padding: 10px;
+    font-size: 1.3rem;
+  }
 }
 
-.box__footer a {
-  margin-top: 10px;
-  color: #000000;
-  font-family: "Alegreya", serif;
-  font-weight: 700;
-  padding: 10px;
+.box__footer {
+  a {
+    margin-top: 10px;
+    color: #000000;
+    font-family: "Alegreya", serif;
+    font-weight: 700;
+    padding: 10px;
+  }
 }
 
 .icons {
@@ -63,7 +67,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
   .box__footer {
@@ -73,12 +77,14 @@ footer {
     align-items: center;
   }
 
-  .box__footer h4 {
-    color: #000000;
-    font-family: "Alegreya", serif;
-    font-weight: 700;
-    padding-top: 20px;
-    font-size: 1.2rem;
+  .box__footer {
+    h4 {
+      color: #000000;
+      font-family: "Alegreya", serif;
+      font-weight: 700;
+      padding-top: 20px;
+      font-size: 1.2rem;
+    }
   }
 }
 
@@ -107,6 +113,7 @@ footer {
 
   .box__footer .logo img {
     width: 120px;
+    height: 120px;
     border: solid 3px #08090b;
     border-radius: 10px;
     @include box_shadow(1);
@@ -116,26 +123,31 @@ footer {
     max-width: 350px;
   }
 
-  .box__footer h4 {
-    margin-bottom: 30px;
-    color: #000000;
-    font-family: "Alegreya", serif;
-    font-weight: 700;
-    font-size: 1.2rem;
+  .box__footer {
+    h4 {
+      margin-bottom: 30px;
+      color: #000000;
+      font-family: "Alegreya", serif;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
   }
 
-  .box__footer a {
-    margin-top: 10px;
-    color: #000000;
-    font-family: "Alegreya", serif;
-    font-weight: 700;
-  }
-
-  .box__footer a:hover {
-    color: aliceblue;
+  .box__footer {
+    a {
+      margin-top: 10px;
+      color: #000000;
+      font-family: "Alegreya", serif;
+      font-weight: 700;
+      &:hover {
+        color: aliceblue;
+      }
+    }
   }
 
   .icons {
     margin-top: 10px;
+    width: 54px;
+    height: 40px;
   }
 }

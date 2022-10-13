@@ -20,14 +20,14 @@
       text-align: center;
       font-weight: 700;
       line-height: 1.6;
-      color: rgb(0, 87, 0);
+      color: #3bb231;
       padding: 15px;
     }
     &-subtitle {
       font-size: 2rem;
       font-family: "Alegreya", serif;
       text-align: center;
-      color: rgb(0, 87, 0);
+      color: #3bb231;
       font-weight: 700;
       padding: 15px;
     }
@@ -45,7 +45,7 @@
     font-size: 2rem;
     font-style: normal;
     font-family: "Alegreya", serif;
-    color: rgb(0, 87, 0);
+    color: #3bb231;
     margin-top: 75px;
     padding-bottom: 10px;
     &_paragraph {
@@ -53,7 +53,7 @@
       font-size: 1.2rem;
       font-family: "Alegreya", serif;
       font-style: normal;
-      color: rgb(0, 87, 0);
+      color: #3bb231;
       font-weight: 700;
       padding: 15px;
     }
@@ -76,11 +76,11 @@
 }
 
 .section__img-one img {
-  border: 10px ridge rgb(0, 87, 0);
+  border: 10px ridge #3bb231;
 }
 
 .section__img-one_two img {
-  border: 10px groove rgb(0, 87, 0);
+  border: 10px groove #3bb231;
 }
 
 .img__link {
@@ -93,7 +93,7 @@
   padding: 10px;
   font-weight: 700;
   a {
-    color: rgb(0, 87, 0);
+    color: #3bb231;
   }
 }
 /* SECTION 2 */
@@ -148,6 +148,8 @@
     animation-timing-function: ease-in-out;
     img {
       box-shadow: #864800 1px 1px 50px 0;
+      width: 80%;
+      height: 100%;
     }
   }
 
@@ -165,6 +167,7 @@
     }
     &-img {
       width: 35%;
+      height: 100%;
       margin-left: 80px;
       transform: translate(100px, -50px);
       animation-name: cultivo;
@@ -186,7 +189,7 @@
   .section__img-one img {
     padding: 20px;
     margin: 5px 20px 5px 290px;
-    border: 10px ridge rgb(0, 87, 0);
+    border: 10px ridge #3bb231;
     &:hover {
       transition: all 2s;
     }
@@ -199,7 +202,7 @@
   .section__img-one_two img {
     padding: 20px;
     margin: 5px 20px 5px 250px;
-    border: 10px groove rgb(0, 87, 0);
+    border: 10px groove #3bb231;
     &:hover {
       transition: all 2s;
     }

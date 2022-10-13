@@ -7,7 +7,7 @@
     text-align: center;
     font-weight: 700;
     line-height: 1.6;
-    color: rgb(0, 87, 0);
+    color: #3bb231;
     padding: 15px;
     margin-top: 70px;
   }
@@ -17,7 +17,7 @@
     font-style: normal;
     font-weight: 700;
     font-family: "Alegreya", serif;
-    color: rgb(0, 87, 0);
+    color: #3bb231;
     padding: 15px;
     text-decoration: underline;
   }
@@ -29,10 +29,26 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    img {
+    &-imgone {
       padding: 10px;
-      border: 10px ridge rgb(0, 87, 0);
+      border: 10px ridge #3bb231;
       margin: 30px;
+      width: 260px;
+      height: 260px;
+    }
+    &-imgtwo {
+      padding: 10px;
+      border: 10px ridge #3bb231;
+      margin: 30px;
+      width: 260px;
+      height: 260px;
+    }
+    &-imgthree {
+      padding: 10px;
+      border: 10px ridge #3bb231;
+      margin: 30px;
+      width: 260px;
+      height: 260px;
     }
   }
 }
@@ -42,7 +58,7 @@
   display: flex;
   flex-direction: column;
   a {
-    color: rgb(0, 87, 0);
+    color: #3bb231;
     text-decoration: none;
     font-size: 1.2rem;
     font-family: "Alegreya", serif;
@@ -51,6 +67,87 @@
     line-height: 1.6;
     font-weight: 700;
     padding: 20px;
+  }
+}
+
+.section__marcas-img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  img {
+    border: 10px ridge #3bb231;
+    margin: 30px;
+    width: 250px;
+    height: 250px;
+  }
+}
+.smoke_title {
+  color: #3bb231;
+  font-size: 2.2rem;
+  font-family: "Alegreya", serif;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 90px;
+}
+.section_smoke {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  &-img {
+    margin: 50px 50px;
+    img {
+      height: 350px;
+      width: 350px;
+      padding: 30px;
+    }
+  }
+}
+.btn_smoke {
+  display: flex;
+  margin-left: 130px;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .smoke_title {
+    color: #3bb231;
+    font-size: 2.2rem;
+    font-family: "Alegreya", serif;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 90px;
+  }
+  .section_smoke {
+    display: grid;
+    grid-template-areas: "imagen imagen";
+    grid-template-rows: 1fr 1fr;
+    &-img {
+      margin: 50px 50px;
+      img {
+        height: 300px;
+        width: 300px;
+        padding: 30px;
+        grid-area: imagen;
+      }
+    }
+  }
+  .btn_smoke {
+    display: flex;
+    margin-left: 105px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding: 10px;
   }
 }
 
@@ -71,8 +168,10 @@
     flex-wrap: nowrap;
     justify-content: center;
     img {
-      border: 10px ridge rgb(0, 87, 0);
+      border: 10px ridge #3bb231;
       margin: 30px;
+      width: 400px;
+      height: 400px;
     }
   }
 
@@ -104,6 +203,28 @@
       &:hover {
         color: #864800;
       }
+    }
+  }
+  .section_smoke {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &-img {
+      img {
+        height: 400px;
+        width: 400px;
+      }
+    }
+    .btn_smoke {
+      display: flex;
+      margin-left: 160px;
+      color: rgb(0, 0, 0);
+      background-color: white;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      padding: 10px;
     }
   }
 }
