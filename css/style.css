@@ -8390,7 +8390,9 @@ textarea.form-control-lg {
   padding: 4px 0;
   margin: 72px 0; }
   .wrapper__img img {
-    box-shadow: #864800 1px 1px 50px 0; }
+    box-shadow: #864800 1px 1px 50px 0;
+    width: 100%;
+    height: 100%; }
 
 .main__principal_wrapper-title {
   font-style: normal;
@@ -8426,7 +8428,7 @@ textarea.form-control-lg {
     padding-bottom: 10px; }
     .principal__informativ-title_paragraph {
       text-align: justify;
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-family: "Alegreya", serif;
       font-style: normal;
       color: #3bb231;
@@ -8434,6 +8436,7 @@ textarea.form-control-lg {
       padding: 15px; }
   .principal__informativ-img {
     width: 100%;
+    height: 100%;
     border-radius: 10px;
     box-shadow: #864800 1px 1px 10px 0; }
 
@@ -8497,6 +8500,22 @@ textarea.form-control-lg {
   /* inicio main principal */
   .main__principal {
     padding: 100px 80px 50px; }
+  .main__principal_wrapper-title {
+    font-style: normal;
+    font-size: 4rem;
+    font-family: "Alegreya", serif;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.6;
+    color: #3bb231;
+    padding: 15px; }
+  .main__principal_wrapper-subtitle {
+    font-size: 3rem;
+    font-family: "Alegreya", serif;
+    text-align: center;
+    color: #3bb231;
+    font-weight: 700;
+    padding: 15px; }
   .wrapper__img {
     height: 100%;
     animation-name: float;
@@ -8516,7 +8535,8 @@ textarea.form-control-lg {
       align-items: center;
       width: 100%; }
     .principal__informativ-title_paragraph {
-      width: 50%; }
+      width: 50%;
+      font-size: 1.2rem; }
     .principal__informativ-img {
       width: 35%;
       height: 100%;
@@ -8576,7 +8596,7 @@ textarea.form-control-lg {
 /* pagina SMOKE PRODUCTS */
 .main__principal-smoke_wrapper-title {
   font-style: normal;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: "Alegreya", serif;
   text-align: center;
   font-weight: 700;
@@ -8587,7 +8607,7 @@ textarea.form-control-lg {
 
 .main__principal-smoke_wrapper-subtitle {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
   font-family: "Alegreya", serif;
@@ -8773,7 +8793,7 @@ textarea.form-control-lg {
 /* pagina GROW PRODUCTS */
 .main__principal_grow_wrapper-title {
   font-style: normal;
-  font-size: 4rem;
+  font-size: 2rem;
   font-family: "Alegreya", serif;
   text-align: center;
   font-weight: 700;
@@ -8783,7 +8803,7 @@ textarea.form-control-lg {
   margin-top: 70px; }
   .main__principal_grow_wrapper-title_subtitle {
     text-align: justify;
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-style: normal;
     font-family: "Alegreya", serif;
     color: #3bb231;
@@ -8918,14 +8938,10 @@ textarea.form-control-lg {
     margin-bottom: 10px; } }
 
 @media (min-width: 992px) {
-  .main__principal_wrapper-title_subtitle {
-    text-align: center;
-    font-size: 2rem;
-    font-style: normal;
-    font-family: "Alegreya", serif;
-    color: #3bb231;
-    margin-top: 105px;
-    padding-bottom: 10px; }
+  .main__principal_grow_wrapper-title {
+    font-size: 3rem; }
+    .main__principal_grow_wrapper-title_subtitle {
+      font-size: 2rem; }
   .section__principal_grow {
     display: grid;
     grid-template-areas: "title title title" "card-01 card-02 card-03";
@@ -8957,7 +8973,7 @@ textarea.form-control-lg {
     font-weight: 700;
     text-align: center;
     color: #3bb231;
-    margin-top: 50px; }
+    margin-top: 80px; }
   .card01 {
     grid-area: card-01;
     margin: -30px;
@@ -9025,7 +9041,7 @@ textarea.form-control-lg {
 
 .main__principal_wrapper-title {
   font-style: normal;
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: "Alegreya", serif;
   text-align: center;
   font-weight: 700;
@@ -9042,20 +9058,20 @@ textarea.form-control-lg {
   padding: 15px; }
 
 .principal__informativ_nosotros-subtitle {
-  font-size: 2rem;
-  font-family: "Alegreya", serif;
-  text-align: justify;
-  color: #3bb231;
-  font-weight: 400;
-  padding: 15px; }
-
-.principal__informativ_nosotros-subsubtitle {
   font-size: 1.5rem;
   font-family: "Alegreya", serif;
   text-align: justify;
   color: #3bb231;
   font-weight: 400;
-  padding: 15px; }
+  padding: 20px; }
+
+.principal__informativ_nosotros-subsubtitle {
+  font-size: 1rem;
+  font-family: "Alegreya", serif;
+  text-align: justify;
+  color: #3bb231;
+  font-weight: 400;
+  padding: 20px; }
 
 .slide {
   margin-top: 10px; }
@@ -9068,9 +9084,13 @@ textarea.form-control-lg {
   box-shadow: #864800 1px 1px 15px 0; }
 
 @media (min-width: 992px) {
+  .main__principal_wrapper-title {
+    font-size: 4rem; }
   .wrapper__img img {
     width: 80%;
     height: 100%; }
+  .principal__informativ_nosotros-subsubtitle {
+    font-size: 1.5rem; }
   .slide {
     margin-top: 10px; }
     .slide img {
@@ -9265,6 +9285,7 @@ footer {
 
 .box__footer .logo img {
   width: 120px;
+  height: 120px;
   border: solid 3px #08090b;
   border-radius: 10px;
   box-shadow: #000000 10px 10px 10px 0;
@@ -9292,7 +9313,9 @@ footer {
   padding: 10px; }
 
 .icons {
-  padding: 5px; }
+  padding: 5px;
+  width: 35px;
+  height: 35px; }
 
 /* FOOOTER */
 /* INICIO TABLET */

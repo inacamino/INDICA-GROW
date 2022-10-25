@@ -1,7 +1,7 @@
 /* pagina GROW PRODUCTS */
 .main__principal_grow_wrapper-title {
   font-style: normal;
-  font-size: 4rem;
+  font-size: 2rem;
   font-family: "Alegreya", serif;
   text-align: center;
   font-weight: 700;
@@ -11,7 +11,7 @@
   margin-top: 70px;
   &_subtitle {
     text-align: justify;
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-style: normal;
     font-family: "Alegreya", serif;
     color: #3bb231;
@@ -171,14 +171,11 @@
   }
 }
 @media (min-width: 992px) {
-  .main__principal_wrapper-title_subtitle {
-    text-align: center;
-    font-size: 2rem;
-    font-style: normal;
-    font-family: "Alegreya", serif;
-    color: #3bb231;
-    margin-top: 105px;
-    padding-bottom: 10px;
+  .main__principal_grow_wrapper-title {
+    font-size: 3rem;
+    &_subtitle {
+      font-size: 2rem;
+    }
   }
   .section__principal_grow {
     display: grid;
@@ -217,7 +214,7 @@
     font-weight: 700;
     text-align: center;
     color: #3bb231;
-    margin-top: 50px;
+    margin-top: 80px;
   }
   .card01 {
     grid-area: card-01;
