@@ -12,7 +12,7 @@
   --bs-red: #dc3545;
   --bs-orange: #fd7e14;
   --bs-yellow: #ffc107;
-  --bs-green: #3bb231;
+  --bs-green: #198754;
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
   --bs-black: #000;
@@ -8741,8 +8741,8 @@ textarea.form-control-lg {
     .section__marcas-img img {
       border: 10px ridge #3bb231;
       margin: 30px;
-      width: 400px;
-      height: 400px; }
+      width: 350px;
+      height: 350px; }
   .section__marcas-img .imgone:hover {
     transform: scale(1.3) translate(-100px, -50px);
     transition: all 2s; }
@@ -8770,7 +8770,8 @@ textarea.form-control-lg {
     justify-content: center; }
     .section_smoke-img img {
       height: 400px;
-      width: 400px; }
+      width: 400px;
+      padding: 30px; }
     .section_smoke .btn_smoke {
       display: flex;
       margin-left: 160px;
@@ -8831,6 +8832,18 @@ textarea.form-control-lg {
       font-weight: 700;
       padding: 15px; }
 
+.card01 {
+  border: 10px ridge #3bb231;
+  margin: 10px; }
+
+.card02 {
+  border: 10px ridge #3bb231;
+  margin: 10px; }
+
+.card03 {
+  border: 10px ridge #3bb231;
+  margin: 10px; }
+
 .section__grow-links_img a {
   color: #3bb231;
   text-decoration: none;
@@ -8845,32 +8858,17 @@ textarea.form-control-lg {
   justify-content: space-around;
   padding: 15px; }
 
-.card01 {
-  border: 10px ridge #3bb231;
-  margin: 20px; }
-
-.card02 {
-  border: 10px ridge #3bb231;
-  margin: 20px; }
-
-.card03 {
-  border: 10px ridge #3bb231;
-  margin: 20px; }
-
 .imgone img {
-  width: 350px;
-  height: 350px;
-  padding: 15px; }
+  width: 250px;
+  height: 250px; }
 
 .imgtwo img {
-  width: 350px;
-  height: 350px;
-  padding: 15px; }
+  width: 250px;
+  height: 250px; }
 
 .imgthree img {
-  width: 350px;
-  height: 350px;
-  padding: 15px; }
+  width: 250px;
+  height: 250px; }
 
 .section__grow-links_title {
   font-size: 2rem;
@@ -8976,34 +8974,31 @@ textarea.form-control-lg {
     margin-top: 80px; }
   .card01 {
     grid-area: card-01;
-    margin: -30px;
     border: 10px ridge #3bb231; }
     .card01:hover {
       transform: scale(1.3) translate(-80px, -50px);
       transition: all 2s; }
   .card02 {
     grid-area: card-02;
-    margin: -30px;
     border: 10px ridge #3bb231; }
     .card02:hover {
       transform: scale(1.3);
       transition: all 2s; }
   .card03 {
     grid-area: card-03;
-    margin: -30px;
     border: 10px ridge #3bb231; }
     .card03:hover {
       transform: scale(1.3) translate(100px, -50px);
       transition: all 2s; }
   .imgone img {
-    width: 400px;
-    height: 400px; }
+    width: 350px;
+    height: 350px; }
   .imgtwo img {
-    width: 400px;
-    height: 400px; }
+    width: 350px;
+    height: 350px; }
   .imgthree img {
-    width: 400px;
-    height: 400px; }
+    width: 350px;
+    height: 350px; }
   .section__grow-links_img {
     animation-name: link-grow;
     animation-duration: 5s;
@@ -9141,21 +9136,21 @@ textarea.form-control-lg {
   justify-content: center;
   padding: 15px; }
 
-.main__form {
-  font-size: 1.4rem;
-  font-family: "Alegreya", serif;
-  font-style: normal;
+.form_title {
+  font-size: 2rem;
   color: #3bb231;
   text-align: center;
-  font-weight: 700; }
-  .main__form_wrapper {
-    display: flex;
-    flex-direction: column;
-    padding: 20px; }
-  .main__form_title {
-    font-size: 2rem;
-    margin-bottom: 70px;
-    text-shadow: 0 20px 4px #3bb231; }
+  font-weight: 400; }
+
+.form_container {
+  width: 100%; }
+
+.form_img {
+  width: 50px;
+  height: 50px; }
+  .form_img img {
+    border: solid 3px #08090b;
+    border-radius: 10px; }
 
 @media (min-width: 992px) {
   .main__principal-sucursal_wrapper-title {
@@ -9170,13 +9165,25 @@ textarea.form-control-lg {
     flex-direction: row;
     justify-content: center;
     margin-top: 50px; }
-  .main__form_wrapper {
+  .form_container {
+    width: 100%;
+    display: flex; }
+    .form_container_all {
+      width: 70%; }
+  .form_img {
     width: 30%;
-    margin-left: 620px; }
-  .main__form_title {
-    font-size: 2rem;
-    margin-bottom: 70px;
-    text-shadow: 0 20px 4px #3bb231; } }
+    height: 100%;
+    margin: 70px 10px 70px 0; }
+  .form_img img {
+    border-radius: 2rem; }
+  .form_img img:hover {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0px 0px 15px 15px #3bb231;
+    -webkit-box-shadow: 0px 0px 15px 15px #3bb231;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transition: all 1s; } }
 
 * {
   padding: 0;

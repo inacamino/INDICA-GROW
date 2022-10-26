@@ -44,6 +44,19 @@
   }
 }
 
+.card01 {
+  border: 10px ridge #3bb231;
+  margin: 10px;
+}
+.card02 {
+  border: 10px ridge #3bb231;
+  margin: 10px;
+}
+.card03 {
+  border: 10px ridge #3bb231;
+  margin: 10px;
+}
+
 .section__grow-links_img a {
   color: #3bb231;
   text-decoration: none;
@@ -59,41 +72,23 @@
   padding: 15px;
 }
 
-.card01 {
-  border: 10px ridge #3bb231;
-  margin: 20px;
-}
-
-.card02 {
-  border: 10px ridge #3bb231;
-  margin: 20px;
-}
-
-.card03 {
-  border: 10px ridge #3bb231;
-  margin: 20px;
-}
-
 .imgone {
   img {
-    width: 350px;
-    height: 350px;
-    padding: 15px;
+    width: 250px;
+    height: 250px;
   }
 }
 .imgtwo {
   img {
-    width: 350px;
-    height: 350px;
-    padding: 15px;
+    width: 250px;
+    height: 250px;
   }
 }
 
 .imgthree {
   img {
-    width: 350px;
-    height: 350px;
-    padding: 15px;
+    width: 250px;
+    height: 250px;
   }
 }
 
@@ -218,7 +213,6 @@
   }
   .card01 {
     grid-area: card-01;
-    margin: -30px;
     border: 10px ridge #3bb231;
     &:hover {
       transform: scale(1.3) translate(-80px, -50px);
@@ -227,7 +221,6 @@
   }
   .card02 {
     grid-area: card-02;
-    margin: -30px;
     border: 10px ridge #3bb231;
     &:hover {
       transform: scale(1.3);
@@ -236,7 +229,6 @@
   }
   .card03 {
     grid-area: card-03;
-    margin: -30px;
     border: 10px ridge #3bb231;
     &:hover {
       transform: scale(1.3) translate(100px, -50px);
@@ -246,21 +238,21 @@
 
   .imgone {
     img {
-      width: 400px;
-      height: 400px;
+      width: 350px;
+      height: 350px;
     }
   }
   .imgtwo {
     img {
-      width: 400px;
-      height: 400px;
+      width: 350px;
+      height: 350px;
     }
   }
 
   .imgthree {
     img {
-      width: 400px;
-      height: 400px;
+      width: 350px;
+      height: 350px;
     }
   }
 
