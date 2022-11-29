@@ -9331,8 +9331,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 40px;
-    max-width: 768px; }
+    margin-bottom: 40px; }
   .box__footer {
     display: flex;
     flex-direction: column;
@@ -9353,7 +9352,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1180px;
+    max-width: 1190px;
     margin: auto;
     margin-left: 130px;
     height: 500px; }
