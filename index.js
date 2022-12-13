@@ -208,16 +208,17 @@ console.log(productosOrdenadosNumericamente);
 
 //4)
 
-function verOfertas() {
-  let oferta = confirm("Queres ver las ofertas de la tienda?");
-  if (oferta) {
-    let oferton = productos.filter((a) => {
+function seeOfferts() {
+  let offer = confirm("¿Queres ver las ofertas de la tienda?");
+  if (offer) {
+    let ofertaTienda = productos.filter((a) => {
       return a.oferta;
     });
+    console.log(ofertaTienda);
   }
 }
-verOfertas();
-console.log(oferton);
+
+seeOfferts();
 
 //5)
 function buscarProductos() {
