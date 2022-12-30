@@ -79,157 +79,218 @@ Usen este método haciendo una copia segura del array. Pueden copiar el array de
 
 5) A través de un prompt, permita al usuario buscar productos. Una vez que ingrese un producto, busquen con find dicho producto y muestrelo en un alert().*/
 
-const productos = [
-  {
-    id: 1,
-    producto: "bandeja lyon",
-    precio: 1500,
-    categoria: "parafernalia",
-    oferta: false,
-  },
-  {
-    id: 2,
-    producto: "picador amsterdam",
-    precio: 1000,
-    categoria: "parafernalia",
-    oferta: false,
-  },
-  {
-    id: 3,
-    producto: "picador esfera tricolor",
-    precio: 1850,
-    categoria: "parafernalia",
-    oferta: true,
-  },
-  {
-    id: 4,
-    producto: "pipa madera",
-    precio: 700,
-    categoria: "parafernalia",
-    oferta: false,
-  },
-  {
-    id: 5,
-    producto: "pipa dibujo con tapa",
-    precio: 900,
-    categoria: "parafernalia",
-    oferta: false,
-  },
-  {
-    id: 6,
-    producto: "sauver",
-    precio: 1000,
-    categoria: "parafernalia",
-    oferta: true,
-  },
-  {
-    id: 7,
-    producto: "pipa spiderman",
-    precio: 1000,
-    categoria: "parafernalia",
-    oferta: false,
-  },
-  {
-    id: 8,
-    producto: "papel ocb premium",
-    precio: 700,
-    categoria: "parafernalia",
-    oferta: false,
-  },
-  {
-    id: 9,
-    producto: "papel celulosa zeuz",
-    precio: 900,
-    categoria: "parafernalia",
-    oferta: false,
-  },
-  {
-    id: 10,
-    producto: "clipper grande",
-    precio: 1500,
-    categoria: "parafernalia",
-    oferta: false,
-  },
-  {
-    id: 11,
-    producto: "papel hornet transparente",
-    precio: 1100,
-    categoria: "parafernalia",
-    oferta: true,
-  },
-  {
-    id: 12,
-    producto: "picador de madera eco",
-    precio: 500,
-    categoria: "parafernalia",
-    oferta: false,
-  },
-  {
-    id: 13,
-    producto: "picador aluminio radioactivo",
-    precio: 2200,
-    categoria: "parafernalia",
-    oferta: true,
-  },
-  {
-    id: 14,
-    producto: "pipa pirex m calavera",
-    precio: 1100,
-    categoria: "parafernalia",
-    oferta: false,
-  },
-  {
-    id: 15,
-    producto: "cenicero raw",
-    precio: 700,
-    categoria: "parafernalia",
-    oferta: false,
-  },
-];
+// const productos = [
+//   {
+//     id: 1,
+//     producto: "bandeja lyon",
+//     precio: 1500,
+//     categoria: "parafernalia",
+//     oferta: false,
+//   },
+//   {
+//     id: 2,
+//     producto: "picador amsterdam",
+//     precio: 1000,
+//     categoria: "parafernalia",
+//     oferta: false,
+//   },
+//   {
+//     id: 3,
+//     producto: "picador esfera tricolor",
+//     precio: 1850,
+//     categoria: "parafernalia",
+//     oferta: true,
+//   },
+//   {
+//     id: 4,
+//     producto: "pipa madera",
+//     precio: 700,
+//     categoria: "parafernalia",
+//     oferta: false,
+//   },
+//   {
+//     id: 5,
+//     producto: "pipa dibujo con tapa",
+//     precio: 900,
+//     categoria: "parafernalia",
+//     oferta: false,
+//   },
+//   {
+//     id: 6,
+//     producto: "sauver",
+//     precio: 1000,
+//     categoria: "parafernalia",
+//     oferta: true,
+//   },
+//   {
+//     id: 7,
+//     producto: "pipa spiderman",
+//     precio: 1000,
+//     categoria: "parafernalia",
+//     oferta: false,
+//   },
+//   {
+//     id: 8,
+//     producto: "papel ocb premium",
+//     precio: 700,
+//     categoria: "parafernalia",
+//     oferta: false,
+//   },
+//   {
+//     id: 9,
+//     producto: "papel celulosa zeuz",
+//     precio: 900,
+//     categoria: "parafernalia",
+//     oferta: false,
+//   },
+//   {
+//     id: 10,
+//     producto: "clipper grande",
+//     precio: 1500,
+//     categoria: "parafernalia",
+//     oferta: false,
+//   },
+//   {
+//     id: 11,
+//     producto: "papel hornet transparente",
+//     precio: 1100,
+//     categoria: "parafernalia",
+//     oferta: true,
+//   },
+//   {
+//     id: 12,
+//     producto: "picador de madera eco",
+//     precio: 500,
+//     categoria: "parafernalia",
+//     oferta: false,
+//   },
+//   {
+//     id: 13,
+//     producto: "picador aluminio radioactivo",
+//     precio: 2200,
+//     categoria: "parafernalia",
+//     oferta: true,
+//   },
+//   {
+//     id: 14,
+//     producto: "pipa pirex m calavera",
+//     precio: 1100,
+//     categoria: "parafernalia",
+//     oferta: false,
+//   },
+//   {
+//     id: 15,
+//     producto: "cenicero raw",
+//     precio: 700,
+//     categoria: "parafernalia",
+//     oferta: false,
+//   },
+// ];
 
-//2)
+// //2)
 
-function sale() {
-  productos.forEach((elemento) => {
-    if (elemento.oferta) {
-      console.log(elemento.precio * 0.8);
-    }
-  });
-}
+// function sale() {
+//   productos.forEach((elemento) => {
+//     if (elemento.oferta) {
+//       console.log(elemento.precio * 0.8);
+//     }
+//   });
+// }
 
-sale();
+// sale();
 
-//3)
+// //3)
 
-const productosOrdenadosNumericamente = [...productos].sort((a, b) => {
-  return a - b;
-});
-console.log(productosOrdenadosNumericamente);
+// const productosOrdenadosNumericamente = [...productos].sort((a, b) => {
+//   return a - b;
+// });
+// console.log(productosOrdenadosNumericamente);
 
-//4)
+// //4)
 
-function seeOfferts() {
-  let offer = confirm("¿Queres ver las ofertas de la tienda?");
-  if (offer) {
-    let ofertaTienda = productos.filter((a) => {
-      return a.oferta;
-    });
-    console.log(ofertaTienda);
+// function seeOfferts() {
+//   let offer = confirm("¿Queres ver las ofertas de la tienda?");
+//   if (offer) {
+//     let ofertaTienda = productos.filter((a) => {
+//       return a.oferta;
+//     });
+//     console.log(ofertaTienda);
+//   }
+// }
+
+// seeOfferts();
+
+// //5)
+// function buscarProductos() {
+//   let search = prompt("Busque su producto deseado");
+
+//   let producto = productos.find((elemento) => {
+//     return elemento.producto === search;
+//   });
+
+//   alert("Este es su producto deseado");
+// }
+
+// buscarProductos();
+// console.log(buscarProductos);
+
+//Realizacion de login
+const formLogin = document.querySelector("#login");
+const inputUser = document.querySelector("#input-user");
+const inputPass = document.querySelector("#input-pass");
+const loginIncorrecto = document.querySelector("#logint");
+const contenedorForm = document.querySelector(".container-login");
+const logout = document.querySelector("#logout");
+
+const datosUsuario = {
+  user: "iñaki",
+  password: "iñaki123",
+};
+
+const subirAlLs = (clave, valor) => {
+  localStorage.setItem(clave, JSON.stringify(valor));
+};
+
+const obtenerDelLs = (clave) => {
+  return JSON.parse(localStorage.getItem(clave));
+};
+
+formLogin.onsubmit = (event) => {
+  event.preventDefault();
+  if (
+    inputUser.value === datosUsuario.user &&
+    inputPass.value === datosUsuario.password
+  ) {
+    subirAlLs("login", true);
+    contenedorForm.style.display = "none";
+    logout.style.display = "block";
+    contenedorPokemon.style.display = "none";
+  } else {
+    loginIncorrecto.style.display = "block";
+    inputPass.style.border = "2px solid #3bb231";
+    inputUser.style.border = "2px solid #3bb231";
+    contenedorPokemon.style.display = "flex";
+  }
+};
+
+//validacion de login
+function validarLogin(clave) {
+  if (clave !== true) {
+    contenedorForm.style.display = "flex";
+    logout.style.display = "none";
+    contenedorPokemon.style.display = "none";
+  } else {
+    contenedorForm.style.display = "none";
+    logout.style.display = "block";
+    contenedorPokemon.style.display = "flex";
   }
 }
 
-seeOfferts();
+validarLogin(obtenerDelLs("login"));
 
-//5)
-function buscarProductos() {
-  let search = prompt("Busque su producto deseado");
-
-  let producto = productos.find((elemento) => {
-    return elemento.producto === search;
-  });
-
-  alert("Este es su producto deseado");
-}
-
-buscarProductos();
-console.log(buscarProductos);
+//deslogeo del usuario
+logout.onclick = () => {
+  localStorage.removeItem("login");
+  validarLogin(obtenerDelLs("login"));
+  formLogin.reset();
+};
